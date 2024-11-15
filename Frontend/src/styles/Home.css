@@ -1,0 +1,270 @@
+:root {
+  --dollar-bill-green: #85bb65;
+  --text-shadow: 2px 1px rgb(217, 18, 18);
+}
+
+* {
+  font-family: 'Poiret One', sans-serif;
+  
+} 
+
+body {
+  background: #ffffff;
+  align-items: center;
+}
+
+.home-body {
+  position: center;
+  background: #ffffff;
+  font-weight: 900;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  min-height: 100vh;
+  color: rgb(25, 43, 57);
+  padding-right: 20px;
+  margin-bottom: -50px;
+}
+/* Navbar Enhancements */
+.navbar {
+  z-index: 999;
+  background: var(--dollar-bill-green);
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.navbar .navbar-brand {
+  color: #fff;
+  font-size: 1.5em;
+}
+
+
+.navbar .nav-link {
+  color: #357ae9;
+  position: relative;
+  padding: 8px 15px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+  color: #fff;
+  text-decoration: none;
+  transform: scale(1.05);
+}
+
+.navbar .nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 50%;
+  bottom: 0;
+  background-color: #f8f9fa;
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+.navbar .nav-link:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+
+.login-signup-button {
+  background-color: var(--dollar-bill-green) !important;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.login-signup-button:hover, .login-signup-button:focus {
+  background-color: #6ea755;
+  outline: none;
+}
+
+.home-body h1 {
+  margin-top: 25px;
+  font-weight: 900;
+  font-size: 2.5em;
+  color: var(--dollar-bill-green);
+}
+
+.home-body h6 {
+  font-size: 1.25em;
+  font-weight: 500;
+  max-width: 1000px;
+  max-height: 600px;
+  padding: 15px;
+  margin-top: 15px;
+  color: #fff;
+  animation: slideUp 1s ease-in-out;
+  background-color: #3c4344;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.2) 5px 5px 15px;
+  line-height: 1.5em;
+}
+
+.chart-div {
+  text-align: center;
+  margin: 15px 0px 15px 15px;
+}
+
+.chart-image {
+  text-align: center;
+  width: 30%;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.2) 5px 5px 15px;
+  animation: slideUp 1s ease-in-out;
+}
+
+.col-md-12, .row, .mt-5 {
+  background-color: transparent;
+  text-align: center;
+  align-items: center;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(300%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(300%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+.feature-title {
+  background-color: lightgray;
+  border-radius: 5px;
+  margin-left: 25px;
+  color: black;
+  box-shadow: 3px 3px black;
+  animation: slideRight 500ms;
+}
+
+.feature-list {
+  background-color: var(--dollar-bill-green);
+  border-radius: 5px;
+  margin-left: 25px;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.2) 3px 3px 10px;
+  animation: slideRight 500ms;
+}
+
+.home-subtitle, .budget-text {
+  font-size: 1.1em;
+}
+
+.budget-image {
+  animation: slideLeft 500ms;
+  border-radius: 10px;
+}
+
+.testimonial {
+  background: var(--dollar-bill-green);
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+  box-shadow: slategray 3px 3px;
+  animation: slideUp 500ms;
+}
+
+.testimonials-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 2rem;
+  color: #313131;
+  font-weight: bold;
+}
+
+.card-testimonials .card-text {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1rem;
+  color: #555;
+}
+
+.card-features {
+  min-width: 35vw;
+  margin-bottom: 100px;
+}
+
+.card-header-features, .card-testimonials {
+  background: var(--dollar-bill-green);
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.2) 4px 4px 15px;
+}
+
+.card-testimonials:hover {
+  background-color: beige;
+  transition: background-color 0.3s ease;
+}
+
+.footer {
+  background-color: var(--dollar-bill-green);
+}
+
+.footer-text {
+  font-size: 0.9em;
+}
+
+@media screen and (max-width: 400px) {
+  .card-text {
+    font-size: 0.7em;
+  }
+
+  table {
+    font-size: 0.75em;
+  }
+}
+
+.feature-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.feature-row-reverse {
+  flex-direction: row-reverse;
+}
+
+.feature-content {
+  max-width: 80%;
+  text-align: center;
+  color: var(--dollar-bill-green);
+  font-weight: bold;
+  padding: 20px;
+}
+
+.feature-image {
+  max-width: 65%;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.2) 5px 5px 15px;
+  animation: slideLeft 300ms;
+}
+
+@media (max-width: 768px) {
+  .feature-row, .feature-row-reverse {
+    flex-direction: column;
+  }
+}
